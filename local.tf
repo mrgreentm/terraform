@@ -7,3 +7,7 @@ variable "conteudo" {
     type = string
     default = "Hello world"
 }
+
+output "id-do-arquivo" {
+    value = resource.local_file.exemplo.id
+}
